@@ -1,0 +1,190 @@
+body{
+    background: #cfcfcf;
+    color: #20201f;
+}
+
+.nav_menu {
+    background: #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.nav.navbar-nav>li>a {
+    color: #20201f!important;
+}
+
+.top_nav .nav .open>a{
+    background: #D9DEE4;
+}
+
+.top_nav .nav .open>a, .top_nav .nav .open>a:focus, .top_nav .nav .open>a:hover, .top_nav .nav>li>a:focus, .top_nav .nav>li>a:hover {
+    background: #bfbfbf;
+}
+
+.logo{
+    margin: 15px 0 15px 15px;
+    width: 30%;
+}
+
+.info-number .badge {
+    top: 21px !important;
+}
+
+.navbar-nav>li>a {
+    padding: 21px 15px 17px;
+}
+
+.left_col {
+    background: #CFCFCF;
+}
+
+.profile_info span {
+    color: #404040;
+}
+
+.profile_info h2{
+    color: #404040;
+}
+
+.nav.child_menu>li>a, .nav.side-menu>li>a {
+    color: #404040;
+}
+
+.main_menu span.fa {
+    color: #404040;
+}
+
+.img-circle.profile_img {
+    border: 1px solid rgba(64, 64, 64, .44);
+}
+
+.nav.side-menu>li.active, .nav.side-menu>li.current-page {
+    border-right: 5px solid #404040;
+}
+
+.nav li.current-page {
+    background: rgba(255,255,255,0.5);
+}
+
+.nav.side-menu>li.active>a {
+    text-shadow: rgba(0,0,0,.25) 0 -1px 0;
+    background: rgba(255,255,255,0.5) !important;
+    box-shadow: rgba(0,0,0,.25) 0 1px 0, inset rgba(255,255,255,.16) 0 1px 0;
+}
+
+.nav.side-menu>li>a:hover {
+    color: #000 !important;
+}
+
+.nav-md ul.nav.child_menu li:before {
+    background: #404040;
+}
+
+.right_col {
+    background: #E7E7E7 !important;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #E7E7E7;
+    border-radius: 4px;
+}
+
+a {
+    color: #404040;
+}
+
+a:focus, a:hover {
+    color: #000;
+}
+
+.toggle {
+    float: right;
+}
+
+.x_title {
+    border-bottom: 2px solid #CFCFCF;
+}
+
+.panel_toolbox>li>a:hover {
+    background: #cfcfcf;
+    color: #fff;
+}
+.nav li li.current-page a, .nav.child_menu li li a.active, .nav.child_menu li li a:hover {
+    color: #404040;
+}
+
+.panel-default>.panel-heading {
+    background-color: #E7E7E7;
+    border-color: #E7E7E7;
+}
+
+.panel-heading .fa, .icone-editar{
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.panel-heading .fa:hover, .icone-editar:hover{
+    background-color: #CFCFCF;
+}
+
+.panel-heading .fa, .icone-clonar{
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.panel-heading .fa:hover, .icone-clonar:hover{
+    background-color: #CFCFCF;
+}
+
+.panel-heading .fa, .icone-excluir{
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.panel-heading .fa:hover, .icone-excluir:hover{
+    background-color: #CFCFCF;
+}
+
+.panel-heading .fa, .icone-excluir-grupo{
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.panel-heading .fa:hover, .icone-excluir-grupo:hover{
+    background-color: #CFCFCF;
+}
+
+
+.btnAddItem{
+    cursor: pointer;
+}
+
+.grupo-adicionais{
+    border: 1px solid #CFCFCF;
+    border-radius: 4px 4px 0px 0px;
+    background-color: #E7E7E7;
+}
+
+.lista-adicionais .list-group-item:first-child, .btnAddAdicional{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.lista-adicionais .list-group-item:last-child{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+textarea {
+    resize: vertical;
+}

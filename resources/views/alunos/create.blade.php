@@ -1,0 +1,119 @@
+@extends('layouts.main')
+@section('title') Novo Aluno @endsection
+@section('content')
+    <div class="">
+        <ol class="breadcrumb">
+            <li><a href="{{url('/')}}"><i class="fa fa-home"></i> Home </a></li>  
+            <li><a href="{{url('colaboradores')}}"><i class="fa fa-users"></i> Aluno </a></li>
+            <li class="active">
+                Novo
+            </li>
+        </ol>
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    
+                    <div class="x_title">
+                        <h2>Aluno</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        @include('parts.messages')
+                        <form class="row" action="{{url('alunos')}}" method="POST" enctype="multipart/form-data">
+                            @csrf
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Nome</label>
+                                    <input name="nome" class="form-control" type="text" id="nome" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">RG</label>
+                                    <input name="rg" class="form-control" type="text" id="rg" onkeypress="return somenteNumeros(event)" maxlength="9" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Celular</label>
+                                    <input name="celular" class="form-control" onkeypress="return somenteNumeros(event)" maxlength="11" type="text" id="identificacao" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Residencial</label>
+                                    <input name="residencial" class="form-control" type="text" onkeypress="return somenteNumeros(event)" maxlength="8" id="identificacao" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Estado</label>
+                                    <input name="estado" class="form-control" type="text" id="identificacao" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Cidade</label>
+                                    <input name="cidade" class="form-control" type="text" id="identificacao" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Bairro</label>
+                                    <input name="bairro" class="form-control" type="text" id="identificacao" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Rua</label>
+                                    <input name="rua" class="form-control" type="text" id="identificacao" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Número</label>
+                                    <input name="numero" class="form-control" type="text" id="identificacao" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="exampleFormControlSelect1">Selecione a escola</label>
+
+                                <select class="form-control" id="escola" name="escola">
+                                    <option>Selecione a escola</option>
+                                    @foreach ($escola as $item)
+                                        <option value="{{$item->id}}">{{$item->nome}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            
+                            <div class="col-md-12">
+                                <a href="{{url('alunos')}}" class="btn btn-info">
+                                    Voltar
+                                </a>
+                                <button id="btnEditar" type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+
+@section('javascript')
+    <script>
+        function somenteNumeros(e) {
+            var charCode = e.charCode ? e.charCode : e.keyCode;
+            // charCode 8 = backspace   
+            // charCode 9 = tab
+            if (charCode != 8 && charCode != 9) {
+                // charCode 48 equivale a 0   
+                // charCode 57 equivale a 9
+                if (charCode < 48 || charCode > 57) {
+                    return false;
+                }
+            }
+        }
+    </script>
+@endsection

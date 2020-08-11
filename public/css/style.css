@@ -1,0 +1,49 @@
+/*Marins Left*/
+.m-l-0{
+    margin-left: 0px !important;
+    position:absolute;
+    bottom:0; 
+    width:100%;
+}
+
+.m-l-5{
+    margin-left: 5px;
+}
+
+/*Margins Top*/
+.m-t-15{
+    margin-top: 15px;
+}
+
+.m-t-25{
+    margin-top: 25px;
+}
+
+.m-t-50{
+    margin-top: 50px;
+}
+
+/*text colors*/
+.dark-grey{
+    color: #404040 !important;
+}
+
+.circle-logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #E6E9ED;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.preparando{
+    background-color: #f0ad4e;
+    color: #fff;
+}
+
+.pronto{
+    background-color: #5cb85c;
+    color: #fff;
+}
